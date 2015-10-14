@@ -19,7 +19,7 @@ default: &default
   encoding: unicode
   username: postgres
   password: password
-  host:localhost
+  host: localhost
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: endless_dreams_production
-  username: endless_dreams
-  password: <%= ENV['ENDLESS_DREAMS_DATABASE_PASSWORD'] %>
+  # username: endless_dreams
+  # password: <%= ENV['ENDLESS_DREAMS_DATABASE_PASSWORD'] %>
